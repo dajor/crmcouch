@@ -1,0 +1,16 @@
+---
+name: CRMCouch - Server
+description: ''
+keywords: ''
+type: Default
+documentation: ''
+images:
+- name: nginx_latest
+  source: nginx:latest
+  type: Default
+- name: klaemo_couchdb
+  source: klaemo/couchdb:latest
+  type: Default
+  links:
+  - service: nginx_latest
+    alias: nginx_latest
